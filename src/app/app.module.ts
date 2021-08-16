@@ -4,15 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CardFormComponent } from './card-form/card-form.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
-  declarations: [
+  declarations: [AppComponent, CardFormComponent, InputComponent],
   imports: [BrowserModule, ReactiveFormsModule],
-    CardFormComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
   providers: [],
   bootstrap: [AppComponent],
 })
