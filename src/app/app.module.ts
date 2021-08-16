@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -6,13 +7,13 @@ import { CardFormComponent } from './card-form/card-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+  imports: [BrowserModule, ReactiveFormsModule],
     CardFormComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
